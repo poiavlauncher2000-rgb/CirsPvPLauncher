@@ -16,7 +16,7 @@ jobs:
       - name: Build APK
         run: |
           cd android
-          gradle wrapper --gradle-version 8.7
+          gradle wrapper --gradle-version 8.13
           ./gradlew assembleDebug --no-daemon
       - uses: actions/upload-artifact@v4
         with:
